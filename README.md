@@ -5,6 +5,8 @@ Stránky predmetov:
 * [Logika pre informatikov (AIN)](https://dai.fmph.uniba.sk/w/Course:Logic_for_CS/sk)
 * [Úvod do matematickej logiky (INF)](http://www.dcs.fmph.uniba.sk/~mazak/vyucba/udml/)
 
+[Inštrukcie na odovzdávanie riešení praktických úloh](docs/odovzdavanie.md).
+
 Úlohy a prezentácie z prednášok
 -------------------------------
 
