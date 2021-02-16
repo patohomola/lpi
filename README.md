@@ -5,7 +5,12 @@ Stránky predmetov:
 * [Logika pre informatikov (AIN)](https://dai.fmph.uniba.sk/w/Course:Logic_for_CS/sk)
 * [Úvod do matematickej logiky (INF)](http://www.dcs.fmph.uniba.sk/~mazak/vyucba/udml/)
 
-Úlohy
------
+Úlohy a prezentácie z prednášok
+-------------------------------
+
+[Teoretické úlohy pre AIN](teoreticke-ain/)
+
+| Týždeň | Prezentácie z prednášok | Praktické úlohy |
+|-------:|-------------------------|-----------------|
 
 [Pravidlá pre úlohy](http://dai.fmph.uniba.sk/w/Course:Logic_for_CS/sk#pravidla-uloh)
