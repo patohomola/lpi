@@ -10,7 +10,9 @@ Stránky predmetov:
 Úlohy a prezentácie z prednášok
 -------------------------------
 
-[Teoretické úlohy pre AIN](teoreticke-ain/)
+Teoretické úlohy pre AIN riešte v aplikácii
+[Logic Workbook](https://fmfi-uk-1-ain-412.github.io/workbook/)
+([krátky návod](https://github.com/FMFI-UK-1-AIN-412/lpi-private/tree/main/teoreticke-ain#krátky-návod)).
 
 | Týždeň | Prezentácie z prednášok | Praktické úlohy |
 |-------:|-------------------------|-----------------|
