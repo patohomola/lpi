@@ -17,5 +17,6 @@ Teoretické úlohy pre AIN riešte v aplikácii
 | Týždeň | Prezentácie z prednášok | Praktické úlohy |
 |-------:|-------------------------|-----------------|
 | 1 | [Úvod. Atomické formuly a štruktúry](prednasky/pr01.pdf) | [SAT solver](prakticke/pu01) |
+| 2 | [Výrokovologické spojky](prednasky/pr02.pdf) | |
 
 [Pravidlá pre úlohy](http://dai.fmph.uniba.sk/w/Course:Logic_for_CS/sk#pravidla-uloh)
