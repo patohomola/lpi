@@ -1,0 +1,98 @@
+{
+  "versionNumber": 1,
+  "cells": {
+    "1": {
+      "id": 1,
+      "type": "text",
+      "data": "# Logika pre informatikov<br> 3. teoretické cvičenie<br> Prémiová úloha",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "2": {
+      "id": 2,
+      "type": "text",
+      "data": "## Úloha B3.:cnt[a]\nZbierka:\n:xref[3.2.7]{.exbook label=\"príklad\"},\n:xref[3.2.2]{.exbook label=\"úloha\"}.\n\nMajme nasledujúce výroky:\n\n($A_1$) Keď Rusko zaútočilo na Ukrajinu, tak porušilo Budapeštianske memorandum\n   alebo Putin klame.\n\n($A_2$) Rusko je agresor, ak porušilo Budapeštianske memorandum\n  a na Ukrajinu zaútočilo.\n\n($A_3$) Rusko neporušilo Budapeštianske memorandum, len ak Putin neklame.\n\n($A_4$) Ak to, že Rusko zaútočilo na Ukrajinu, znamená, že porušilo Budapeštianske memorandum, tak\n  Putin klame.\n\n($C_1$) Putin klame.\n\n($C_2$) Rusko Budapeštianske memorandum neporušilo.\n\n($C_3$) Rusko je agresor, iba ak zaútočilo na Ukrajinu.",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "3": {
+      "id": 3,
+      "type": "text",
+      "data": ":icon[write] Sformalizujte výroky ($A_1$), …, ($A_4$)\nako ucelenú teóriu $T = \\{A_1, \\ldots, A_4 \\}$\nvo vhodne zvolenom spoločnom jazyku $\\Lang$ výrokovej časti logiky prvého rádu.\nV tom istom jazyku sformalizujte aj výroky ($C_1$), …, ($C_3$).\nZadefinujte použitý jazyk a vysvetlite význam jeho predikátových symbolov.\n\n$\\Consts = \\{ ... \\}$\n\n$\\Preds = \\{ ... \\}$\n\n:::div{.table.table-intended-meaning}\n\n| Predikátový symbol | Zamýšľaný význam |\n|--------------------|------------------|\n| ...| ... |\n\n:::\n\n\n$A_1 = ...$\n\n$A_2 = ...$\n\n$A_3 = ...$\n\n$A_4 = ...$\n\n$C_1 = ...$\n\n$C_2 = ...$\n\n$C_3 = ...$",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "4": {
+      "id": 4,
+      "type": "text",
+      "data": ":icon[write] Pomocou vašej teórie využitím\nvýrokovologickej splniteľnosti, vyplývania a nezávislosti zistite,\nktoré z výrokov $(C_1)$–$(C_3)$ sú na základe výrokov\n$(A_1)$–$(A_4)$\nurčite pravdivé, určite nepravdivé a o ktorých to nemožno rozhodnúť.\n\n**Riešenie:** ...",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "5": {
+      "id": 5,
+      "type": "text",
+      "data": "## Úloha B3.:cnt[a]\nZbierka:\n:xref[2.1.5]{.exbook label=\"príklad\"}.\n\nNech $\\Lang$ je ľubovoľný jazyk výrokovologickej časti logiky prvého rádu.\nZadefinujte funkciu $\\pcount\\colon \\Forms \\to \\Nat$ takú,\nže $\\pcount(A)$ je počet výskytov symbolov zátvoriek\nvo výrokovologickej formule $A$.\n\n:icon[write] **Riešenie:**\n\n\n**Definícia.** Nech ...\n\n$\\pcount(A) = ...$\\\n...",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "6": {
+      "id": 6,
+      "type": "text",
+      "data": "## Úloha B3.:cnt[a] \nZbierka:\n:xref[2.1.6]{.exbook label=\"príklad\"}.\n\nDokážte alebo vyvráťte:\nNech $\\Lang$ je ľubovoľný jazyk výrokovologickej časti logiky prvého rádu.\nPre každú výrokovologickú formulu $A$ platí\n\n$$ \\pcount(A) \\leq 4\\deg(A) + 2 $$.\n\n:icon[write] **Riešenie:**\n...",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "10": {
+      "id": 10,
+      "type": "text",
+      "data": ":icon[deadline]\nVypracovanú prémiovú úlohu odovzdajte najneskôr v **utorok 14. 3. 2023 o 23:59**.\n\n:icon[bonus]\nZa včas odovzdané správne riešenie získate **1 bod**.\n\n:icon[submission]\nSpôsob odovzdania je opísaný na konci tohto pracovného hárku.\n\n:icon[technical]\nÚlohu riešte pomocou aplikácie [Logic Workbook](https://fmfi-uk-1-ain-412.github.io/workbook/)\nvo **vetve `tu03-bonus`**.\n\n::p[:span[[**Otvoriť túto úlohu v správnej vetve**](../../tu03-bonus/teoreticke-ain/tu03-bonus.workbook)]]{.ms-5}\n\nRiešenie občas uložte stlačením stlačením\n:span[Merge changes]{.border.border-success.text-success.p-1.rounded} na hornej lište.\n**Určite uložte posledné zmeny pred odovzdaním!**\n\n:icon[submission]\nÚlohu odovzdáte vytvorením pull requestu (PR)\ndo vetvy `tu03-bonus` v repozitári `FMFI-UK-1-AIN-412/lpi23-‹váš_uniba_login›`.\nSprávne vytvorený PR sa objaví v [zozname PR pre tu03-bonus](https://github.com/pulls?utf8=✓&q=is%3Aopen+is%3Apr+user%3AFMFI-UK-1-AIN-412+base%3Atu03-bonus).\n\n:icon[envelope-at-fill]{.text-primary}\nAk narazíte na problémy alebo máte otázky, kontaktujte vyučujúcich:    \n`lpi-team` :icon[at] `lists.dai.fmph.uniba.sk`.",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "11": {
+      "id": 11,
+      "type": "text",
+      "data": "<details class=\"small note\">\n\n::summary[:icon[help] Tabuľka symbolov používaných nižšie a ich $\\TeX$ového zápisu.]{.fw-bold}\n\n:::div{.table.table-sm.overflow-auto}\n| Symbol | TeX | Význam | Symbol | TeX | Význam | Symbol | TeX | Význam |\n|:------:|:----|:-------|:------:|:----|:-------|:------:|:----|:-------|\n| ∧ | `\\land` | konjunkcia | $\\Lang$ | `\\Lang` | jazyk | $\\models$ | `\\models` | pravdivosť v štruktúre |\n| ∨ | `\\lor` | disjunkcia | $\\Atoms$ | `\\Atoms` | množina atómov jazyka $\\Lang$ | $\\nmodels$ | `\\nmodels` | nepravdivosť v štruktúre |\n| → | `\\limpl` | implikácia | $\\Consts$ | `\\Consts` | množina konštánt jazyka $\\Lang$ | $\\pmodels$ | `\\pmodels` | pravdivosť v ohodnotení (<em>p</em>ropozičná) |\n| ↔ | `\\lequiv` | ekvivalencia | $\\Preds$ | `\\Preds` | množina predikátov jazyka $\\Lang$ | $\\npmodels$ | `\\npmodels` | nepravdivosť v ohodnotení |\n| ≐ | `\\doteq` | rovnosť (ako logický) symbol | $\\Forms$ | `\\Forms` | množina všetkých formúl jazyka $\\Lang$ | $\\pentails$ | `\\pentails` | výrokovologické (<em>p</em>ropozičné) vyplývanie |\n| ¬ | `\\lnot` | negácia | $\\Struct$ | `\\Struct` | štruktúra | $\\npentails$ | `\\npentails` | výrokovologické nevyplývanie |\n| ↦ | `\\mapsto` | zobrazenie (prvku na prvok) | $\\sym{Ann}$, $\\asym{2}{likes}$ | `\\sym{Ann}`, `\\asym{2}{likes}` | konkrétny mimolog. symbol | $\\bigl($, $\\bigr)$| `\\bigl(`, `\\bigr)` | väčšie zátvorky |\n\n:::\n</details>",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    }
+  },
+  "cellsOrder": [
+    1,
+    10,
+    11,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "settings": {
+    "katexMacros": "\\newcommand{\\DeclareMathOperator}[2]{\\newcommand{#1}{\\mathop{\\mathrm{#2}}}}\n\n%% General math\n\n% Domain and range\n\\DeclareMathOperator{\\dom}{dom}\n\\DeclareMathOperator{\\rng}{rng}\n\n% Powerset\n\\newcommand\\powerset[1]{\\mathcal{P}(#1)}\n\n% Cardinality\n\\newcommand{\\card}[1]{\\lvert#1\\rvert}\n\n% Numbers\n\\newcommand{\\Nat}{\\mathbb{N}}\n\n% Operations\n\\newcommand{\\TIMES}{\\cdot}\n\n\n% Meta syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n\\DeclareMathOperator{\\arity}{ar}\n\\newcommand{\\Lang}{\\mathcal{L}}\n\\newcommand{\\Vars}{\\mathcal{V}_{\\Lang}}\n\\newcommand{\\Consts}{\\mathcal{C}_{\\Lang}}\n\\newcommand{\\Preds}{\\mathcal{P}_{\\Lang}}\n\\newcommand{\\Funcs}{\\mathcal{F}_{\\Lang}}\n\\newcommand{\\Terms}{\\mathcal{T}_{\\Lang}}\n\\newcommand{\\Atoms}{\\mathcal{A}_{\\Lang}}\n\\newcommand{\\Forms}{\\mathcal{E}_{\\Lang}}\n\\newcommand{\\PAtoms}{\\mathcal{PA}_{\\Lang}}\n\\newcommand{\\PForms}{\\mathcal{PE}_{\\Lang}}\n\n% Equality axioms\n\\newcommand{\\Eq}{\\mathrm{Eq}}\n\n% Syntactic transformation\n\\newcommand{\\transform}{\\rightsquigarrow}\n\n% Various syntactic functions\n\\DeclareMathOperator{\\vars}{vars}\n\\DeclareMathOperator{\\atoms}{atoms}\n\\DeclareMathOperator{\\acnt}{acnt}\n\\DeclareMathOperator{\\termVars}{termVars}\n\\DeclareMathOperator{\\free}{free}\n\\DeclareMathOperator{\\ground}{ground}\n\\DeclareMathOperator{\\mgu}{mgu}\n\\DeclareMathOperator{\\vcount}{vcount}\n\\DeclareMathOperator{\\acount}{acount}\n\\DeclareMathOperator{\\ccount}{ccount}\n\\DeclareMathOperator{\\pcount}{pcount}\n\\DeclareMathOperator{\\ncount}{ncount}\n\\DeclareMathOperator{\\cjcount}{cjcount}\n\\DeclareMathOperator{\\bccount}{bccount}\n\\DeclareMathOperator{\\lpcount}{lpcount}\n\\DeclareMathOperator{\\rpcount}{rpcount}\n\\DeclareMathOperator{\\subfs}{subfs}\n\\DeclareMathOperator{\\cons}{cons}\n\\DeclareMathOperator{\\nnf}{nnf}\n\n\n% Concrete syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n% Connectives\n\n\\newcommand{\\nrarr}{\\nrightarrow}\n\\newcommand{\\limpl}{\\rarr}\n\\newcommand{\\nlimpl}{\\nrarr}\n\\newcommand{\\lequiv}{\\lrarr}\n\\newcommand{\\bigland}{\\bigwedge}\n\\newcommand{\\biglor}{\\bigvee}\n\\newcommand{\\lnand}{\\mathbin{\\uparrow}}\n\\newcommand{\\lnor}{\\mathbin{\\downarrow}}\n\\newcommand{\\lxor}{\\veebar}\n\\newcommand{\\landnot}{\\nrightarrow}\n\\newcommand{\\emptyclause}{\\Box}\n\\newcommand{\\quant}[2]{\\mathop{#1#2}\\nolimits}\n\\newcommand{\\A}{\\quant\\forall}\n\\newcommand{\\E}{\\quant\\exists}\n\n% Symbols\n\\newcommand{\\sym}[1]{\\text{\\textsf{#1}}}\n\\newcommand{\\asym}[2]{\\text{\\textsf{#2}$^#1$}}\n\\newcommand{\\var}[1]{\\text{\\textsf{\\textit{#1}}}}\n\\newcommand\\vk{\\var{k}}\n\\newcommand\\vl{\\var{l}}\n\\newcommand\\vm{\\var{m}}\n\\newcommand\\vn{\\var{n}}\n\\newcommand\\vo{\\var{o}}\n\\newcommand\\vp{\\var{p}}\n\\newcommand\\vq{\\var{q}}\n\\newcommand\\vr{\\var{r}}\n\\newcommand\\vs{\\var{s}}\n\\newcommand\\vt{\\var{t}}\n\\newcommand\\vu{\\var{u}}\n\\newcommand\\vv{\\var{v}}\n\\newcommand\\vw{\\var{w}}\n\\newcommand\\vx{\\var{x}}\n\\newcommand\\vy{\\var{y}}\n\\newcommand\\vz{\\var{z}}\n\n\n% Semantics %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n% Auxiliary\n\\providecommand{\\NModels}\n    {\\mathrel{\\mkern1.5mu{\\not}\\nobreak\\mkern-1.5mu}\\models}\n\n% General\n\\providecommand{\\nmodels}{\\mathrel{\\NModels}}\n\\providecommand{\\Equiv}{\\mathrel{\\Leftrightarrow}}\n\\renewcommand{\\Equiv}{\\mathrel{\\Leftrightarrow}}\n\\newcommand{\\entails}{\\vDash}\n\\newcommand{\\nentails}{\\nvDash}\n\n% Propositional\n\\newcommand{\\pmodels}{\\models_{\\mathrm{p}}}\n\\newcommand{\\npmodels}{\\mathrel{\\NModels_{\\mathrm{p}}}}\n\\newcommand{\\pEquiv}{\\Equiv_{\\mathrm{p}}}\n\\newcommand{\\pentails}{\\entails_{\\mathrm{p}}}\n\\newcommand{\\npentails}{\\nentails_{\\mathrm{p}}}\n\n% First-order\n\\newcommand{\\Struct}{\\mathcal{M}}\n\\newcommand{\\InStruct}{^{\\mathcal{M}}}\n\n"
+  }
+}
