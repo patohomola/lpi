@@ -19,5 +19,6 @@ Teoretické úlohy pre AIN riešte v aplikácii
 | 1 | [Úvod. Atomické formuly a štruktúry](prednasky/pr01.pdf) | [SAT solver](prakticke/pu01) |
 | 2 | [Výrokovologické spojky](prednasky/pr02.pdf) | [Sudoku](prakticke/pu02) |
 | 3 | [Výrokovologické vyplývanie](prednasky/pr03.pdf) | [Formula](prakticke/pu03) |
+| 4 | [Vlastnosti a vzťahy výrokovologických formúl](prednasky/pr04.pdf) | |
 
 [Pravidlá pre úlohy](http://dai.fmph.uniba.sk/w/Course:Logic_for_CS/sk#pravidla-uloh)
