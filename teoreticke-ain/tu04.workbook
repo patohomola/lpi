@@ -1,0 +1,208 @@
+{
+  "versionNumber": 1,
+  "cells": {
+    "1": {
+      "id": 1,
+      "type": "text",
+      "data": "# Logika pre informatikov<br> 4. teoretické cvičenie ",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "2": {
+      "id": 2,
+      "type": "text",
+      "data": "## Cvičenie 4.:cnt[a]\nZbierka: :xref[2.1.5]{.exbook label=\"príklad\"}.\nPrednášky: napr. definície :xref[2.18]{.lec} ($\\deg$) a :xref[3.26]{.lec} ($\\atoms$).\n\nNech $\\Lang$ je jazyk výrokovologickej časti logiky prvého rádu.\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "3": {
+      "id": 3,
+      "type": "text",
+      "data": "## Cvičenie 4.:cnt[a]\nZbierka: :xref[2.1.6]{.exbook label=\"príklad\"}.\nPrednášky: :xref[3.26]{.lec label=\"definícia\"}.\n\n:icon[write]\nDokážte alebo vyvráťte: Nech $\\Lang$ je jazyk výrokovologickej časti logiky prvého rádu.\nPre každú výrokovologickú formulu $A$ v jazyku $\\Lang$ platí:\n\n$$ \n\\atoms(A) \\subseteq \\subfs(A)\\,. \n$$\n\n**Riešenie:** ... ",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "4": {
+      "id": 4,
+      "type": "text",
+      "data": "## Cvičenie 4.:cnt[a]\nZbierka: :xref[4.3.5]{.exbook label=\"príklad\"}.\n\nNech $X$, $Y$ a $Z$ sú ľubovoľné formuly, nech $T$ je ľubovoľná teória.\nDokážte alebo vyvráťte nasledujúce tvrdenia a)–d).\n\n:::div{.note.bg-transparent.p-0}\n:icon[explanation]\nAk tvrdenie **platí**, napíšte rigorózny **dôkaz**, aký ste videli na prednáške.\nAk tvrdenie **neplatí**, uveďte **konkrétny protipríklad**\n(zvoľte konkrétny vhodný jazyk a vhodné formuly $X$, $Y$, $Z$).\nNezabudnite, že súčasťou protipríkladu je aj **zdôvodnenie**,\nprečo popiera pôvodné tvrdenie.\n\n:::",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "5": {
+      "id": 5,
+      "type": "text",
+      "data": "::h3[:icon[house-fill]{.text-primary} Domáca časť]{.h5}\nZamyslite sa aj na nasledujúcimi tvrdeniami\na dokážte alebo vyvráťte:\n\n:icon[write] **c)**\nAk $\\{ X, Y \\} \\pentails Z$,\ntak $(X \\limpl (Y \\limpl Z))$ je tautológia.\n\n**Riešenie:** ...\n\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "6": {
+      "id": 6,
+      "type": "text",
+      "data": "## Cvičenie 4.:cnt[a]\nZbierka: :xref[4.1.1]{.exbook label=\"príklad\"}.\n\nNa základe nižšie uvedenej pravdivostnej tabuľky rozhodnite, či nasledujúca formula v jazyku $\\Lang$,\nkde $\\Preds = \\{\\sym{loves}^2\\}$ a $\\Consts = \\{\\sym{P}$, $\\sym{L}\\}$ je\ni. tautológia, ii. splniteľná, iii. falzifikovateľná, iv. nesplniteľná.\nRozhodnite o **všetkých** uvedených vlastnostiach\na rozhodnutia **zdôvodnite** na základe definície príslušnej vlastnosti.\n\n$$\nX=\\bigl((\\neg \\sym{loves}(\\sym{P},\\sym{L}) \\limpl \\neg \\sym{loves}(\\sym{L},\\sym{P}))\n    \\land (\\sym{loves}(\\sym{P},\\sym{L}) \\lor \\sym{loves}(\\sym{L},\\sym{P}))\\bigr)\n$$\n\nOznačme:  \n$X_1=(\\neg \\sym{loves}(\\sym{P},\\sym{L}) \\limpl \\neg \\sym{loves}(\\sym{L},\\sym{P}))$  \n$X_2=(\\sym{loves}(\\sym{P},\\sym{L}) \\lor \\sym{loves}(\\sym{L},\\sym{P}))$\n\n:::div{.table.table-truth}\n\n||$\\ \\sym{loves}(\\sym{P},\\sym{L})\\ $ | $\\ \\sym{loves}(\\sym{L},\\sym{P})\\ $ |$\\ \\neg \\sym{loves}(\\sym{P},\\sym{L})\\ $ | $\\ \\neg \\sym{loves}(\\sym{L},\\sym{P})\\ $ | $\\ X_1\\ $| $\\ X_2\\ $ | $\\ X\\ $ |\n|:-----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|\n|$v_1$|$t$|$t$|$\\npentails$|$\\npentails$|$\\pentails$|$\\pentails$|$\\pentails$|\n|$v_2$|$t$|$f$|$\\npentails$|$\\pentails$|$\\pentails$|$\\pentails$|$\\pentails$|\n|$v_3$|$f$|$t$|$\\pentails$|$\\npentails$|$\\npentails$|$\\pentails$|$\\npentails$|\n|$v_4$|$f$|$f$|$\\pentails$|$\\pentails$|$\\pentails$|$\\npentails$|$\\npentails$|\n:::",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "7": {
+      "id": 7,
+      "type": "text",
+      "data": "## :icon[house-fill]{.text-primary} Domáca úloha 4.:cnt[a]\nZbierka: :xref[4.1.3]{.exbook label=\"príklad\"}.\n\nNech $\\Lang$ je ľubovoľný jazyk výrokovologickej časti logiky prvého rádu\na nech $A$ a $B$ sú _ľubovoľné_ výrokovologické formuly jazyka $\\Lang$.\n\nO každej z nasledujúcich formúl v jazyku $\\Lang$ rozhodnite, či je\ni. tautológia, ii. splniteľná, iii. falzifikovateľná, iv. nesplniteľná.\nRozhodnite o **všetkých** možnostiach a rozhodnutia **zdôvodnite**\nna základe definície príslušnej vlastnosti.\n\n$X_1 = \\lnot(\\neg(A \\land B) \\lequiv (\\neg A \\lor \\neg B))$  \n$X_2 = ((\\neg A \\limpl \\neg B) \\land (A \\lor B))$  \n$X_3 = \\lnot((\\neg A \\limpl B) \\land \\neg(A \\lor B))$  \n\n:::div{.note.bg-transparent.p-0}\n:icon[warning]\n**Rozdiel** oproti predchádzajúcemu cvičeniu je v tom,\nže formuly $A$ a $B$ **nemusia byť atomické**,\nani nevieme, aké atómy obsahujú (môžu ich byť tisíce).\nPri skúmaní vlastností $X_1$, …, $X_3$,\nteda **nemôžeme vymenovať všetky ohodnotenia**.\nMôžeme ale použiť inú techniku, bližšiu dôkazom,\nktorej príklady nájdete v zbierke úloh.\n\n:::",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "8": {
+      "id": 8,
+      "type": "text",
+      "data": ":icon[deadline]\nVypracované cvičenie odovzdajte najneskôr v **nedeľu 12. 3. 2023 o 23:59**.\n\n:icon[bonus]\nZa včas odovzdané úplne vypracované cvičenie získate **0,5 boda**\na **spätnú väzbu** na prípadné chyby.\n\n:icon[technical]\nCvičenie riešte vo **vetve `tu04`** vo **svojom repozitári**\n`‹váš_GitHub_login›/lpi23-‹váš_uniba_login›`.\n\n:p[[**Otvoriť toto cvičenie v správnej vetve**](../../tu04/teoreticke-ain/tu04.workbook)]{.mx-5}\n\nRiešenie občas uložte stlačením stlačením\n:span[Merge changes]{.border.border-success.text-success.p-1.rounded} na hornej lište.\n\n:icon[submission]\n**Cvičenie odovzdáte** vytvorením pull requestu (PR)\ndo vetvy `tu04` v repozitári `FMFI-UK-1-AIN-412/lpi23-‹váš_uniba_login›`.\nSprávne vytvorený PR sa objaví v [zozname PR pre tu04](https://github.com/pulls?utf8=✓&q=is%3Aopen+is%3Apr+user%3AFMFI-UK-1-AIN-412+base%3Atu04).\n\n:icon[envelope-at-fill]{.text-primary}\n**Otázky** pre vyučujúcich mimo kontaktnej výučby posielajte na:   \n`lpi-team` :icon[at] `lists.dai.fmph.uniba.sk`.\n\n<details>\n\n::summary[:icon[help] **Tabuľka symbolov** používaných nižšie a ich $\\TeX$ového zápisu.]\n\n:::div{.table.table-sm.overflow-auto.small}\n| Symbol | TeX | Význam | Symbol | TeX | Význam | Symbol | TeX | Význam |\n|:------:|:----|:-------|:------:|:----|:-------|:------:|:----|:-------|\n| ∧ | `\\land` | konjunkcia | $\\Lang$ | `\\Lang` | jazyk | $\\models$ | `\\models` | pravdivosť v štruktúre |\n| ∨ | `\\lor` | disjunkcia | $\\Atoms$ | `\\Atoms` | množina atómov jazyka $\\Lang$ | $\\nmodels$ | `\\nmodels` | nepravdivosť v štruktúre |\n| → | `\\limpl` | implikácia | $\\Consts$ | `\\Consts` | množina konštánt jazyka $\\Lang$ | $\\pmodels$ | `\\pmodels` | pravdivosť v ohodnotení (<em>p</em>ropozičná) |\n| ↔ | `\\lequiv` | ekvivalencia | $\\Preds$ | `\\Preds` | množina predikátov jazyka $\\Lang$ | $\\npmodels$ | `\\npmodels` | nepravdivosť v ohodnotení |\n| ≐ | `\\doteq` | rovnosť (ako logický) symbol | $\\Forms$ | `\\Forms` | množina všetkých formúl jazyka $\\Lang$ | $\\pentails$ | `\\pentails` | výrokovologické (<em>p</em>ropozičné) vyplývanie |\n| ¬ | `\\lnot` | negácia | $\\Struct$ | `\\Struct` | štruktúra | $\\npentails$ | `\\npentails` | výrokovologické nevyplývanie |\n| ↦ | `\\mapsto` | zobrazenie (prvku na prvok) | $\\sym{Ann}$, $\\asym{2}{likes}$ | `\\sym{Ann}`, `\\asym{2}{likes}` | konkrétny mimolog. symbol | $\\bigl($, $\\bigr)$| `\\bigl(`, `\\bigr)` | väčšie zátvorky |\n\n:::\n</details>",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "9": {
+      "id": 9,
+      "type": "text",
+      "data": ":icon[write] **b)**\nZadefinujte funkciu\n$\\bccount\\colon\\Forms \\times \\{\\land,\\lor,\\limpl\\} \\to\\Nat$ takú,\nže $\\bccount(A,b)$ je počet výskytov binárnej spojky $b$ vo formule $A$.\n\n**Riešenie:** ... \n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "10": {
+      "id": 10,
+      "type": "text",
+      "data": ":icon[write] **b)**\nAk $T \\pentails (X \\limpl Y)$,\ntak $T \\pentails \\neg X$ alebo $T \\pentails Y$.\n\n**Riešenie:** ...",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "11": {
+      "id": 11,
+      "type": "text",
+      "data": ":icon[write] **a)**\nAk $T \\pentails (X \\limpl Y)$,\ntak $T \\npentails X$ alebo $T \\pentails Y$.\n\n**Riešenie:** ...\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "12": {
+      "id": 12,
+      "type": "text",
+      "data": ":icon[write] **d)**\nAk $T \\pentails (X \\lor Y)$,\ntak $T \\pentails X$ alebo $T \\pentails Y$. \n\n**Riešenie:** ...\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "13": {
+      "id": 13,
+      "type": "text",
+      "data": ":icon[write] **a)**\nZadefinujte funkciu $\\subfs\\colon\\Forms\\to\\powerset{\\Forms}$ takú,\nže $\\subfs(A)$ je množina všetkých podformúl formuly $A$.\n\n\n**Riešenie:**\n\nNech …\nPre všetky …\ndefinujeme:\n\n$\\begin{aligned}\n\\subfs(…) &= …\n\\end{aligned}$    \n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "17": {
+      "id": 17,
+      "type": "text",
+      "data": ":icon[source]\nPreštudujte si ukážku analýzy vlastností formuly $X_1$\nv :xref[4.1.3]{.exbook label=\"príklade\"} v zbierke úloh.\n\n:icon[write]\nZaškrtnite `[x]` všetky správne možnosti:\n\na) Ohodnotenie, v ktorom je formula $B$ pravdivá:\n  * [ ] existuje,\n  * [ ] môže ale aj nemusí existovať,\n  * [ ] neexistuje.\n\nb) Ohodnotenie, v ktorom je formula $X_1$ pravdivá:\n  * [ ] existuje,\n  * [ ] môže ale aj nemusí existovať,\n  * [ ] neexistuje.\n\nc) Platí, že\n  * [ ] $X_1$ je tautológia,\n  * [ ] $X_1$ je splniteľná,\n  * [ ] $X_1$ je nesplniteľná,\n  * [ ] $X_1$ je falzifikovateľná,\n  * [ ] nedá sa rozhodnúť o týchto vlastnostiach formuly $X_1$.\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "18": {
+      "id": 18,
+      "type": "text",
+      "data": ":icon[source] V rovnakom :xref[4.1.3]{.exbook label=\"príklade\"} si môžete pozrieť aj analýzu vlastností formuly $X_2$.\n\n:icon[write] Zaškrtnite `[x]` všetky správne možnosti: \n\n* [ ] ak $A$ je tautológia, tak $X_2$ je tautológia,\n* [ ] ak $B$ je nesplniteľná, tak $X_2$ je nesplniteľná,\n* [ ] $X_2$ je splniteľná,\n* [ ] nedá sa rozhodnúť, či je $X_2$ nesplniteľná,\n* [ ] ak $A$ je falzifikovateľná, tak $X_2$ je falzifikovateľná,\n* [ ] ak $B$ je splniteľná, tak $X_2$ je splniteľná.\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "19": {
+      "id": 19,
+      "type": "text",
+      "data": ":icon[write]\nSamostatne rozhodnite o všetkých uvažovaných vlastnostiach pre formulu $X_3$. Svoje rozhodnutia **zdôvodnite** základe definície príslušnej vlastnosti.\n\n**Riešenie:**\n...",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "21": {
+      "id": 21,
+      "type": "text",
+      "data": ":icon[write] **Riešenie:**\n\ni. Formula $X$ **je/nie je** tautológiou, pretože …\n\nii. …\n\niii. …\n\niiii. …\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "22": {
+      "id": 22,
+      "type": "text",
+      "data": "## Prémiová úloha tu04-bonus\n\n:icon[bonus]\nĎalšie skúsenosti a prémiový 1 bod môžete získať vyriešením prémiovej úlohy\n:span[[tu04-bonus](../../tu04-bonus/teoreticke-ain/tu04-bonus.workbook)]{.text-nowrap}.\n\n:icon[deadline]\nTermín na odovzdanie je **utorok 21. 3. 2023 o 23:59**.\nOdkaz vyššie smeruje na pracovný hárok prémiovej úlohy v správnej vetve, v ktorom nájdete detaily odovzdania.",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    }
+  },
+  "cellsOrder": [
+    1,
+    8,
+    22,
+    2,
+    13,
+    9,
+    3,
+    4,
+    11,
+    10,
+    5,
+    12,
+    6,
+    21,
+    7,
+    17,
+    18,
+    19
+  ],
+  "settings": {
+    "katexMacros": "\\newcommand{\\DeclareMathOperator}[2]{\\newcommand{#1}{\\mathop{\\mathrm{#2}}}}\n\n%% General math\n\n% Domain and range\n\\DeclareMathOperator{\\dom}{dom}\n\\DeclareMathOperator{\\rng}{rng}\n\n% Powerset\n\\newcommand\\powerset[1]{\\mathcal{P}(#1)}\n\n% Cardinality\n\\newcommand{\\card}[1]{\\lvert#1\\rvert}\n\n% Numbers\n\\newcommand{\\Nat}{\\mathbb{N}}\n\n% Operations\n\\newcommand{\\TIMES}{\\cdot}\n\n\n% Meta syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n\\DeclareMathOperator{\\arity}{ar}\n\\newcommand{\\Lang}{\\mathcal{L}}\n\\newcommand{\\Vars}{\\mathcal{V}_{\\Lang}}\n\\newcommand{\\Consts}{\\mathcal{C}_{\\Lang}}\n\\newcommand{\\Preds}{\\mathcal{P}_{\\Lang}}\n\\newcommand{\\Funcs}{\\mathcal{F}_{\\Lang}}\n\\newcommand{\\Terms}{\\mathcal{T}_{\\Lang}}\n\\newcommand{\\Atoms}{\\mathcal{A}_{\\Lang}}\n\\newcommand{\\Forms}{\\mathcal{E}_{\\Lang}}\n\\newcommand{\\PAtoms}{\\mathcal{PA}_{\\Lang}}\n\\newcommand{\\PForms}{\\mathcal{PE}_{\\Lang}}\n\n% Equality axioms\n\\newcommand{\\Eq}{\\mathrm{Eq}}\n\n% Syntactic transformation\n\\newcommand{\\transform}{\\rightsquigarrow}\n\n% Various syntactic functions\n\\DeclareMathOperator{\\vars}{vars}\n\\DeclareMathOperator{\\atoms}{atoms}\n\\DeclareMathOperator{\\acnt}{acnt}\n\\DeclareMathOperator{\\termVars}{termVars}\n\\DeclareMathOperator{\\free}{free}\n\\DeclareMathOperator{\\ground}{ground}\n\\DeclareMathOperator{\\mgu}{mgu}\n\\DeclareMathOperator{\\vcount}{vcount}\n\\DeclareMathOperator{\\acount}{acount}\n\\DeclareMathOperator{\\ccount}{ccount}\n\\DeclareMathOperator{\\pcount}{pcount}\n\\DeclareMathOperator{\\ncount}{ncount}\n\\DeclareMathOperator{\\cjcount}{cjcount}\n\\DeclareMathOperator{\\bccount}{bccount}\n\\DeclareMathOperator{\\lpcount}{lpcount}\n\\DeclareMathOperator{\\rpcount}{rpcount}\n\\DeclareMathOperator{\\subfs}{subfs}\n\\DeclareMathOperator{\\cons}{cons}\n\\DeclareMathOperator{\\nnf}{nnf}\n\n\n% Concrete syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n% Connectives\n\n\\newcommand{\\nrarr}{\\nrightarrow}\n\\newcommand{\\limpl}{\\rarr}\n\\newcommand{\\nlimpl}{\\nrarr}\n\\newcommand{\\lequiv}{\\lrarr}\n\\newcommand{\\bigland}{\\bigwedge}\n\\newcommand{\\biglor}{\\bigvee}\n\\newcommand{\\lnand}{\\mathbin{\\uparrow}}\n\\newcommand{\\lnor}{\\mathbin{\\downarrow}}\n\\newcommand{\\lxor}{\\veebar}\n\\newcommand{\\landnot}{\\nrightarrow}\n\\newcommand{\\emptyclause}{\\Box}\n\\newcommand{\\quant}[2]{\\mathop{#1#2}\\nolimits}\n\\newcommand{\\A}{\\quant\\forall}\n\\newcommand{\\E}{\\quant\\exists}\n\n% Symbols\n\\newcommand{\\sym}[1]{\\text{\\textsf{#1}}}\n\\newcommand{\\asym}[2]{\\text{\\textsf{#2}$^#1$}}\n\\newcommand{\\var}[1]{\\text{\\textsf{\\textit{#1}}}}\n\\newcommand\\vk{\\var{k}}\n\\newcommand\\vl{\\var{l}}\n\\newcommand\\vm{\\var{m}}\n\\newcommand\\vn{\\var{n}}\n\\newcommand\\vo{\\var{o}}\n\\newcommand\\vp{\\var{p}}\n\\newcommand\\vq{\\var{q}}\n\\newcommand\\vr{\\var{r}}\n\\newcommand\\vs{\\var{s}}\n\\newcommand\\vt{\\var{t}}\n\\newcommand\\vu{\\var{u}}\n\\newcommand\\vv{\\var{v}}\n\\newcommand\\vw{\\var{w}}\n\\newcommand\\vx{\\var{x}}\n\\newcommand\\vy{\\var{y}}\n\\newcommand\\vz{\\var{z}}\n\n\n% Semantics %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n% Auxiliary\n\\providecommand{\\NModels}\n    {\\mathrel{\\mkern1.5mu{\\not}\\nobreak\\mkern-1.5mu}\\models}\n\n% General\n\\providecommand{\\nmodels}{\\mathrel{\\NModels}}\n\\providecommand{\\Equiv}{\\mathrel{\\Leftrightarrow}}\n\\renewcommand{\\Equiv}{\\mathrel{\\Leftrightarrow}}\n\\newcommand{\\entails}{\\vDash}\n\\newcommand{\\nentails}{\\nvDash}\n\n% Propositional\n\\newcommand{\\pmodels}{\\models_{\\mathrm{p}}}\n\\newcommand{\\npmodels}{\\mathrel{\\NModels_{\\mathrm{p}}}}\n\\newcommand{\\pEquiv}{\\Equiv_{\\mathrm{p}}}\n\\newcommand{\\pentails}{\\entails_{\\mathrm{p}}}\n\\newcommand{\\npentails}{\\nentails_{\\mathrm{p}}}\n\n% First-order\n\\newcommand{\\Struct}{\\mathcal{M}}\n\\newcommand{\\InStruct}{^{\\mathcal{M}}}\n\n% tu04 specific\n\\newcommand{\\lPL}{\\sym{loves}(\\sym{P},\\sym{L})}\n\\newcommand{\\lLP}{\\sym{loves}(\\sym{L},\\sym{P})}\n"
+  }
+}
