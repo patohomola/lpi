@@ -1,0 +1,138 @@
+{
+  "versionNumber": 1,
+  "cells": {
+    "1": {
+      "id": 1,
+      "type": "text",
+      "data": "# Logika pre informatikov<br> 5. teoretické cvičenie<br> Prémiová úloha",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "2": {
+      "id": 2,
+      "type": "text",
+      "data": "## Úloha B5\nZbierka:\n:xref[5.2.14]{.exbook label=\"príklad\"},\núlohy :xref[5.1.1]{.exbook},\n:xref[5.2.11]{.exbook}.\n\nTri kamarátky sa zídu v kaviarni,\nktorá ponúka kávu, čokoládu, prosecco a nič iné.\n\n1. Vieme, že Freddie si dá prosecco alebo čokoládu.\n\n1. Ak by to, že si nedá čokoládu, znamenalo, že si dá prosecco, tak si určite nedá kávu.\n\n1. Hannah je spokojná, ak si dá čokoládu alebo kávu.\n\n1. Ak je aspoň jedna z jej kamošiek spokojná, potom aj Gerta je spokojná.\n\nNasledujúce výroky využite v častiach **b)** a **c)**:\n\n  B. Ak si Freddie nedá kávu, len ak si ju dá Hannah,\ntak sú Hannah aj Gerta spokojné.\n\n  C. Gerta nie je spokojná.\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "3": {
+      "id": 3,
+      "type": "text",
+      "data": "Na základe uvedených informácií odpovedzte na otázky v častiach **b)** a **c)**. Na zodpovedanie otázok využite vami sformalizovanú teóriu, formalizáciu príslušných výrokov z otázok a tablá.\n\n<div class=\"note p-0 bg-transparent\">\n\n:icon[explanation]\nNa rozdiel od cvičení 5.2 a 5.3,\nv tejto úlohe odpovedáte na neformálne otázky.\nPreto potrebujete **overiť splniteľnosť** (nie nutne tablom).\n\n:icon[warning] \nAko zvyčajne **jasne vyjadrite**:\n:::enum{.i}\n1. aké logické problémy treba vyriešiť,\n      aby ste zodpovedali otázky b) a c),\n2. ako vaše tablo alebo tablá tieto logické problémy riešia,\n3. aké sú riešenia logických problémov,\n4. aké sú neformálne odpovede na neformálne otázky b) a c).\n:::\n\n:icon[explanation] \nNa vyriešenie úlohy nie sú potrebné tablá s viac ako **28 uzlami**.\n\n</div>",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "5": {
+      "id": 5,
+      "type": "text",
+      "data": ":icon[write] **b)** Je isté, že *ak si Freddie nedá kávu, len ak si ju dá Hannah,\ntak sú Hannah aj Gerta spokojné*?\n\n**RIEŠENIE:** ...",
+      "idCounter": 1,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "8": {
+      "id": 8,
+      "type": "text",
+      "data": ":icon[deadline]\nVypracovanú prémiovú úlohu odovzdajte najneskôr v **utorok 28. 3. 2023 o 23:59**.\n\n:icon[bonus]\nZa včas odovzdané správne riešenie získate **1 bod**.\n\n:icon[technical] Úlohu riešte pomocou aplikácie [Logic Workbook](https://fmfi-uk-1-ain-412.github.io/workbook/)\nvo **vetve `tu05-bonus`**.\n\n::p[:span[[**Otvoriť túto úlohu v správnej vetve**](../../tu05-bonus/teoreticke-ain/tu05-bonus.workbook)]]{.ms-5}\n\nRiešenie občas uložte stlačením stlačením\n:span[Merge changes]{.border.border-success.text-success.p-1.rounded} na hornej lište.\n**Určite uložte posledné zmeny pred odovzdaním!**\n\n:icon[submission]\n**Úlohu odovzdáte** vytvorením pull requestu (PR)\ndo vetvy `tu05-bonus` v repozitári `FMFI-UK-1-AIN-412/lpi23-‹váš_uniba_login›`.\n**Skontrolujte**, či sa váš PR objaví v [zozname PR pre tu05-bonus](https://github.com/pulls?utf8=✓&q=is%3Aopen+is%3Apr+user%3AFMFI-UK-1-AIN-412+base%3Atu05-bonus).\n\n:icon[envelope-at-fill]{.text-primary}\nAk narazíte na problémy alebo máte otázky, kontaktujte vyučujúcich:    \n`lpi-team` :icon[at] `lists.dai.fmph.uniba.sk`.\n\n<details>\n\n::summary[:icon[help] Tabuľka symbolov používaných nižšie a ich $\\TeX$ového zápisu.]\n\n:::div{.table.table-sm.overflow-auto.small}\n| Symbol | TeX | Význam | Symbol | TeX | Význam | Symbol | TeX | Význam |\n|:------:|:----|:-------|:------:|:----|:-------|:------:|:----|:-------|\n| ↛ | `\\landnot` | **spojka „a nie“** | ← | `\\lif` | **spojka „ak“** |\n| ∧ | `\\land` | konjunkcia | $\\Lang$ | `\\Lang` | jazyk | $\\models$ | `\\models` | pravdivosť v štruktúre |\n| ∨ | `\\lor` | disjunkcia | $\\Atoms$ | `\\Atoms` | množina atómov jazyka $\\Lang$ | $\\nmodels$ | `\\nmodels` | nepravdivosť v štruktúre |\n| → | `\\limpl` | implikácia | $\\Consts$ | `\\Consts` | množina konštánt jazyka $\\Lang$ | $\\pmodels$ | `\\pmodels` | pravdivosť v ohodnotení (<em>p</em>ropozičná) |\n| ↔ | `\\lequiv` | ekvivalencia | $\\Preds$ | `\\Preds` | množina predikátov jazyka $\\Lang$ | $\\npmodels$ | `\\npmodels` | nepravdivosť v ohodnotení |\n| ≐ | `\\doteq` | rovnosť (ako logický) symbol | $\\Forms$ | `\\Forms` | množina všetkých formúl jazyka $\\Lang$ | $\\pentails$ | `\\pentails` | výrokovologické (<em>p</em>ropozičné) vyplývanie |\n| ¬ | `\\lnot` | negácia | $\\Struct$ | `\\Struct` | štruktúra | $\\npentails$ | `\\npentails` | výrokovologické nevyplývanie |\n| ↦ | `\\mapsto` | zobrazenie (prvku na prvok) | $\\sym{Ann}$, $\\asym{2}{likes}$ | `\\sym{Ann}`, `\\asym{2}{likes}` | konkrétny mimolog. symbol | $\\bigl($, $\\bigr)$| `\\bigl(`, `\\bigr)` | väčšie zátvorky |\n\n:::\n</details>",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "9": {
+      "id": 9,
+      "type": "text",
+      "data": ":icon[write] **c)** Predpokladajme, že *Gerta nie je spokojná.*\nAké nápoje z ponuky kaviarne si Freddie a Hannah mohli objednať?\n\n**RIEŠENIE:** ...",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "11": {
+      "id": 11,
+      "type": "text",
+      "data": ":icon[tools] Pomocou aplikácie Formalization checker sformalizujte výroky 1.–4. ako ucelenú teóriu $T = \\{A_1, \\ldots, A_4\\}$ a výroky B a C ako formuly $B$ a $C$, ktoré použijete pri riešení častí **b)** a **c)**.\n\n:::div{.note.p-0.bg-transparent}\n:icon[explanation]\nVýroky **formalizujte verne**,\n  zachovajte ich spojky, nevyužívajte ekvivalentné úpravy.\n  Vybrali sme ich tak, aby vám umožnili precvičiť si\n  tablové pravidlá pre rôzne spojky s rôznymi znamienkami.\n:::",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "16": {
+      "id": 16,
+      "type": "formalizationChecker",
+      "data": {
+        "exercise": {
+          "exercise_id": 20,
+          "title": "2023 – Prémiová úloha 5",
+          "description": "Sformalizujte nasledujúce výroky ako formuly v uvedenom jazyku výrokovologickej časti logiky prvého rádu. Zamýšľaný význam predikátových symbolov a ich argumentov je: drink(x,y) – x pije (dá si) y; satisfied(x) – x je spokojný/á.",
+          "constants": "Freddie, Hannah, Gerta, prosecco, chocolate, coffee",
+          "predicates": "drink/2, satisfied/1",
+          "functions": "",
+          "constraints": "",
+          "propositions": [
+            {
+              "proposition_id": 611,
+              "proposition": "1. Vieme, že Freddie si dá prosecco alebo čokoládu.",
+              "solution": null
+            },
+            {
+              "proposition_id": 612,
+              "proposition": "2. Ak by to, že si nedá čokoládu, znamenalo, že si dá prosecco, tak si určite nedá kávu.",
+              "solution": null
+            },
+            {
+              "proposition_id": 613,
+              "proposition": "3. Hannah je spokojná, ak si dá čokoládu alebo kávu.",
+              "solution": null
+            },
+            {
+              "proposition_id": 614,
+              "proposition": "4. Ak je aspoň jedna z jej kamošiek spokojná, potom aj Gerta je spokojná.",
+              "solution": null
+            },
+            {
+              "proposition_id": 615,
+              "proposition": "B. Ak si Freddie nedá kávu, len ak si ju dá Hannah, tak sú Hannah aj Gerta spokojné.",
+              "solution": null
+            },
+            {
+              "proposition_id": 616,
+              "proposition": "C. Gerta nie je spokojná.",
+              "solution": null
+            }
+          ]
+        },
+        "exerciseId": 20
+      },
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    }
+  },
+  "cellsOrder": [
+    1,
+    8,
+    2,
+    11,
+    16,
+    3,
+    5,
+    9
+  ]
+}
