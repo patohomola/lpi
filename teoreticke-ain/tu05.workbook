@@ -1,0 +1,191 @@
+{
+  "versionNumber": 1,
+  "cells": {
+    "1": {
+      "id": 1,
+      "type": "text",
+      "data": "## Cvičenie 5.:cnt[a]\nZbierka:\n:xref[5.1.2]{.exbook label=\"príklad\"},\n:xref[5.1.1]{.exbook label=\"úloha\"}.\n\nMajme teóriu $T = \\{A_1, \\ldots, A_7\\}$ a formulu $X$:\n\n$A_1 = (\\sym{cinema}(\\sym{Fred},\\sym{Anne}) \\lor (\\sym{listens}(\\sym{Fred},\\sym{PinkFloyd}) \\lor \\sym{plays}(\\sym{Fred},\\sym{FredsPS})))$\n\n$A_2 = (\\sym{band}(\\sym{PinkFloyd}) \\land \\sym{gameConsole}(\\sym{FredsPS}))$\n\n$A_3 = (\\neg\\sym{frustrated}(\\sym{Fred}) \\limpl \\sym{cinema}(\\sym{Fred},\\sym{Anne}))$\n\n$A_4 = (\\sym{frustrated}(\\sym{Fred}) \\limpl (\\sym{listens}(\\sym{Fred},\\sym{PinkFloyd}) \\lor \\sym{plays}(\\sym{Fred},\\sym{FredsPS})))$\n\n$A_5 = \\neg(\\sym{cinema}(\\sym{Fred},\\sym{Anne}) \\land (\\sym{listens}(\\sym{Fred},\\sym{PinkFloyd}) \\land \\sym{plays}(\\sym{Fero},\\sym{FredsPS})))$\n\n$A_6 = (\\sym{plays}(\\sym{Fred},\\sym{FredsPS})\\limpl \\sym{listens}(\\sym{Fred},\\sym{PinkFloyd}))$\n\n$A_7 = (\\sym{listens}(\\sym{Fred},\\sym{PinkFloyd}) \\limpl \\neg\\sym{frustrated}(\\sym{Fred}))$\n\n$X = (\\neg\\sym{plays}(\\sym{Fred},\\sym{FredsPS}) \\limpl \\sym{cinema}(\\sym{Fred},\\sym{Anne}))$",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "2": {
+      "id": 2,
+      "type": "text",
+      "data": "## Cvičenie 5.:cnt[a]\nZbierka:\n:xref[5.1.3]{.exbook label=\"príklad\"},\n:xref[5.1.1]{.exbook label=\"úloha\"}.\n\nMajme teóriu $T = \\{A_1, \\ldots, A_5\\}$ a formulu $X$:\n\n$A_1 = (\\FFDD \\limpl \\neg \\FFDP)$\n\n$A_2 = (\\FFDC \\limpl (\\FFDP \\lor \\FFDA))$\n\n$A_3 = (\\FFDV \\limpl \\neg \\FFDA)$\n\n$\\begin{aligned}\n  A_4 = \\big(&(\\FFDU \\limpl \\FFDIE) \\land {}\\\\\n  &((\\neg \\FFDU \\land \\neg \\FFDV) \\limpl \\neg\\FFDIE)\\big)\n\\end{aligned}$\n\n$A_5 = (\\FFDIE \\limpl \\neg \\FFDD)$\n\n$X = ((\\FFDD \\land \\FFDC) \\limpl \\neg \\FFDV)$",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "3": {
+      "id": 3,
+      "type": "text",
+      "data": "::h3[:icon[house-fill]{.text-primary} Domáca časť]{.h5}\nPreložte teóriu a formulu do slovenčiny čo najprirodzenejšie:\n\n($A_1$) ...\n\n($A_2$) ...\n\n($A_3$) ...\n\n($A_4$) ...\n\n($A_5$) ...\n\n($A_6$) ...\n\n($A_7$) ...\n\n($X$) ...",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "4": {
+      "id": 4,
+      "type": "text",
+      "data": "**a)** 🤔 Premyslite si interpretáciu formúl v slovenčine a prečo je výrok zodpovedajúci formule $X$ logickým dôsledkom výrokov zodpovedajúcich teórii $T$.\n\n:::div{.note.bg-transparent.p-0}\n:icon[explanation] \nV tejto úlohe neodpovedáme na neformálnu otázku,\nale riešime priamo iba formálny problém vyplývania.\nPreto netreba overovať splniteľnosť teórie $T$.\n\nAk by $T$ bola nesplniteľná, formula $X$ by z nej vyplývala triviálne\na nemalo by to praktické dôsledky.\nUzavreté tablo by však existovalo aj v tomto prípade.\n:::\n\n**b)** :icon[tools] Dokážte, že $T \\pentails X$ pomocou aplikácie Tableau editor tak, aby zodpovedalo vášmu zdôvodneniu.",
+      "idCounter": 1,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "8": {
+      "id": 8,
+      "type": "text",
+      "data": "# Logika pre informatikov<br> 5. teoretické cvičenie",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "9": {
+      "id": 9,
+      "type": "text",
+      "data": ":icon[deadline]\nVypracované cvičenie odovzdajte najneskôr v **nedeľu 19. 3. 2023 o 23:59**.\n\n:icon[bonus]\nZa včas odovzdané úplne vypracované cvičenie získate **0,5 boda**\na **spätnú väzbu** na prípadné chyby.\n\n:icon[technical]\nCvičenie riešte vo **vetve `tu05`** vo **svojom repozitári**\n`‹váš_GitHub_login›/lpi23-‹váš_uniba_login›`.\n\n:p[[**Otvoriť toto cvičenie v správnej vetve**](../../tu05/teoreticke-ain/tu05.workbook)]{.mx-5}\n\nRiešenie občas uložte stlačením stlačením\n:span[Merge changes]{.border.border-success.text-success.p-1.rounded} na hornej lište.\n\n:icon[submission]\n**Cvičenie odovzdáte** vytvorením pull requestu (PR)\ndo vetvy `tu05` v repozitári `FMFI-UK-1-AIN-412/lpi23-‹váš_uniba_login›`.\n**Skontrolujte**, či sa váš PR objaví v [**zozname PR pre tu05**](https://github.com/pulls?utf8=✓&q=is%3Aopen+is%3Apr+user%3AFMFI-UK-1-AIN-412+base%3Atu05).\n\n:icon[envelope-at-fill]{.text-primary}\n**Otázky** pre vyučujúcich mimo kontaktnej výučby posielajte na:   \n`lpi-team` :icon[at] `lists.dai.fmph.uniba.sk`.\n\n<details>\n\n::summary[:icon[help] **Tabuľka symbolov** používaných nižšie a ich $\\TeX$ového zápisu.]\n\n:::div{.table.table-sm.overflow-auto.small}\n| Symbol | TeX | Význam | Symbol | TeX | Význam | Symbol | TeX | Význam |\n|:------:|:----|:-------|:------:|:----|:-------|:------:|:----|:-------|\n| ∧ | `\\land` | konjunkcia | $\\Lang$ | `\\Lang` | jazyk | $\\models$ | `\\models` | pravdivosť v štruktúre |\n| ∨ | `\\lor` | disjunkcia | $\\Atoms$ | `\\Atoms` | množina atómov jazyka $\\Lang$ | $\\nmodels$ | `\\nmodels` | nepravdivosť v štruktúre |\n| → | `\\limpl` | implikácia | $\\Consts$ | `\\Consts` | množina konštánt jazyka $\\Lang$ | $\\pmodels$ | `\\pmodels` | pravdivosť v ohodnotení (<em>p</em>ropozičná) |\n| ↔ | `\\lequiv` | ekvivalencia | $\\Preds$ | `\\Preds` | množina predikátov jazyka $\\Lang$ | $\\npmodels$ | `\\npmodels` | nepravdivosť v ohodnotení |\n| ≐ | `\\doteq` | rovnosť (ako logický) symbol | $\\Forms$ | `\\Forms` | množina všetkých formúl jazyka $\\Lang$ | $\\pentails$ | `\\pentails` | výrokovologické (<em>p</em>ropozičné) vyplývanie |\n| ¬ | `\\lnot` | negácia | $\\Struct$ | `\\Struct` | štruktúra | $\\npentails$ | `\\npentails` | výrokovologické nevyplývanie |\n| ↦ | `\\mapsto` | zobrazenie (prvku na prvok) | $\\sym{Ann}$, $\\asym{2}{likes}$ | `\\sym{Ann}`, `\\asym{2}{likes}` | konkrétny mimolog. symbol | $\\bigl($, $\\bigr)$| `\\bigl(`, `\\bigr)` | väčšie zátvorky |\n\n:::\n</details>",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "10": {
+      "id": 10,
+      "type": "text",
+      "data": ":icon[tools]\nPomocou aplikácie Tableau editor dokážte, že $T \\pentails X$. Snažte sa zostrojiť tablo tak, aby zodpovedalo vášmu zdôvodneniu.\n\n🤔 Opäť si vopred premyslite, prečo je formula logickým dôsledkom. S tým vám môže pomôcť preklad teórie a formuly do slovenčiny nižšie.",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "11": {
+      "id": 11,
+      "type": "text",
+      "data": "## Cvičenie 5.:cnt[a]\nZbierka: :xref[5.1.9]{.exbook label=\"príklad\"}.\n\nMajme nasledujúce formuly vo výrokovologickej časti logiky prvého rádu $\\Lang$, kde $\\Preds = \\{P^1\\}$ a $\\Consts = \\{a, b\\}$:\n\n$X_1 = (P(a) \\limpl P(a))$\n\n<!-- $\\bigl((P(a) \\land P(b)) \\limpl (P(a) \\lor P(b)\\bigr)$\n\n$\\bigl(\\bigl((P(a) \\land P(b)) \\limpl P(c)\\bigr) \\lequiv \\bigl(P(a) \\limpl (P(b) \\limpl P(c))\\bigr)\\bigr)$\n\n-->\n\n$X_2 = \\bigl(\\lnot (P(a) \\land P(b)) \\lequiv (\\lnot P(a) \\lor \\lnot P(b))\\bigr)$\n\n:icon[tools] V tablovom kalkule (pomocou aplikácie Tableau editor) dokážte, že $X_1$ a $X_2$ sú *tautológie*. Zapíšte záver a zdôvodnite ho.",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "13": {
+      "id": 13,
+      "type": "tableauEditor",
+      "data": {
+        "type": "open",
+        "node": {
+          "id": 1,
+          "value": "",
+          "references": []
+        },
+        "config": "Propositional"
+      },
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "14": {
+      "id": 14,
+      "type": "text",
+      "data": ":icon[write] \n**Záver**:\n\nFormula $X_1$ je …, pretože …\n\nFormula $X_2$ je …, pretože …\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "15": {
+      "id": 15,
+      "type": "text",
+      "data": "## Prémiová úloha `tu05-bonus`\n\n:icon[bonus]\nĎalšie skúsenosti a prémiový 1 bod môžete získať vyriešením prémiovej úlohy\n:span[[tu05-bonus](../../tu05-bonus/teoreticke-ain/tu05-bonus.workbook)]{.text-nowrap}.\n\n:icon[deadline]\nTermín na odovzdanie je **utorok 28. 3. 2023 o 23:59**.\nOdkaz vyššie smeruje na pracovný hárok prémiovej úlohy v správnej vetve, v ktorom nájdete detaily odovzdania.",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "16": {
+      "id": 16,
+      "type": "tableauEditor",
+      "data": {
+        "type": "open",
+        "node": {
+          "id": 1,
+          "value": "",
+          "references": []
+        },
+        "config": "Basic propositional"
+      },
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "17": {
+      "id": 17,
+      "type": "text",
+      "data": ":icon[write] \n**Záver**:\n\n$T \\pentails X$, pretože ...",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "18": {
+      "id": 18,
+      "type": "text",
+      "data": ":icon[write] \n**Záver a jeho zdôvodnenie**:\n\n...",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "19": {
+      "id": 19,
+      "type": "text",
+      "data": "## :icon[house-fill]{.text-primary} Odporúčaná domáca časť\n\nVeľmi vám odporúčame dokázať si niektoré ďalšie tautológie\nz :xref[5.1.9]{.exbook label=\"úlohy\"} v zbierke.",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    }
+  },
+  "cellsOrder": [
+    8,
+    9,
+    15,
+    11,
+    13,
+    14,
+    2,
+    4,
+    16,
+    17,
+    1,
+    10,
+    3,
+    18,
+    19
+  ],
+  "settings": {
+    "katexMacros": "\\newcommand{\\DeclareMathOperator}[2]{\\newcommand{#1}{\\mathop{\\mathrm{#2}}}}\n\n%% General math\n\n% Domain and range\n\\DeclareMathOperator{\\dom}{dom}\n\\DeclareMathOperator{\\rng}{rng}\n\n% Powerset\n\\newcommand\\powerset[1]{\\mathcal{P}(#1)}\n\n% Cardinality\n\\newcommand{\\card}[1]{\\lvert#1\\rvert}\n\n% Numbers\n\\newcommand{\\Nat}{\\mathbb{N}}\n\n% Operations\n\\newcommand{\\TIMES}{\\cdot}\n\n\n% Meta syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n\\DeclareMathOperator{\\arity}{ar}\n\\newcommand{\\Lang}{\\mathcal{L}}\n\\newcommand{\\Vars}{\\mathcal{V}_{\\Lang}}\n\\newcommand{\\Consts}{\\mathcal{C}_{\\Lang}}\n\\newcommand{\\Preds}{\\mathcal{P}_{\\Lang}}\n\\newcommand{\\Funcs}{\\mathcal{F}_{\\Lang}}\n\\newcommand{\\Terms}{\\mathcal{T}_{\\Lang}}\n\\newcommand{\\Atoms}{\\mathcal{A}_{\\Lang}}\n\\newcommand{\\Forms}{\\mathcal{E}_{\\Lang}}\n\\newcommand{\\PAtoms}{\\mathcal{PA}_{\\Lang}}\n\\newcommand{\\PForms}{\\mathcal{PE}_{\\Lang}}\n\n% Equality axioms\n\\newcommand{\\Eq}{\\mathrm{Eq}}\n\n% Syntactic transformation\n\\newcommand{\\transform}{\\rightsquigarrow}\n\n% Various syntactic functions\n\\DeclareMathOperator{\\vars}{vars}\n\\DeclareMathOperator{\\atoms}{atoms}\n\\DeclareMathOperator{\\acnt}{acnt}\n\\DeclareMathOperator{\\termVars}{termVars}\n\\DeclareMathOperator{\\free}{free}\n\\DeclareMathOperator{\\ground}{ground}\n\\DeclareMathOperator{\\mgu}{mgu}\n\\DeclareMathOperator{\\vcount}{vcount}\n\\DeclareMathOperator{\\acount}{acount}\n\\DeclareMathOperator{\\ccount}{ccount}\n\\DeclareMathOperator{\\pcount}{pcount}\n\\DeclareMathOperator{\\ncount}{ncount}\n\\DeclareMathOperator{\\cjcount}{cjcount}\n\\DeclareMathOperator{\\bccount}{bccount}\n\\DeclareMathOperator{\\lpcount}{lpcount}\n\\DeclareMathOperator{\\rpcount}{rpcount}\n\\DeclareMathOperator{\\subfs}{subfs}\n\\DeclareMathOperator{\\cons}{cons}\n\\DeclareMathOperator{\\nnf}{nnf}\n\n\n% Concrete syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n% Connectives\n\n\\newcommand{\\nrarr}{\\nrightarrow}\n\\newcommand{\\limpl}{\\rarr}\n\\newcommand{\\nlimpl}{\\nrarr}\n\\newcommand{\\lequiv}{\\lrarr}\n\\newcommand{\\bigland}{\\bigwedge}\n\\newcommand{\\biglor}{\\bigvee}\n\\newcommand{\\lnand}{\\mathbin{\\uparrow}}\n\\newcommand{\\lnor}{\\mathbin{\\downarrow}}\n\\newcommand{\\lxor}{\\veebar}\n\\newcommand{\\landnot}{\\nrightarrow}\n\\newcommand{\\emptyclause}{\\Box}\n\\newcommand{\\quant}[2]{\\mathop{#1#2}\\nolimits}\n\\newcommand{\\A}{\\quant\\forall}\n\\newcommand{\\E}{\\quant\\exists}\n\n% Symbols\n\\newcommand{\\sym}[1]{\\text{\\textsf{#1}}}\n\\newcommand{\\asym}[2]{\\text{\\textsf{#2}$^#1$}}\n\\newcommand{\\var}[1]{\\text{\\textsf{\\textit{#1}}}}\n\\newcommand\\vk{\\var{k}}\n\\newcommand\\vl{\\var{l}}\n\\newcommand\\vm{\\var{m}}\n\\newcommand\\vn{\\var{n}}\n\\newcommand\\vo{\\var{o}}\n\\newcommand\\vp{\\var{p}}\n\\newcommand\\vq{\\var{q}}\n\\newcommand\\vr{\\var{r}}\n\\newcommand\\vs{\\var{s}}\n\\newcommand\\vt{\\var{t}}\n\\newcommand\\vu{\\var{u}}\n\\newcommand\\vv{\\var{v}}\n\\newcommand\\vw{\\var{w}}\n\\newcommand\\vx{\\var{x}}\n\\newcommand\\vy{\\var{y}}\n\\newcommand\\vz{\\var{z}}\n\n\n% Semantics %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n% General\n\\providecommand{\\nmodels}\n    {\\mathrel{\\mkern1.5mu{\\not}\\mkern-1.5mu}\\models}\n\\providecommand{\\Equiv}{\\mathrel{\\Leftrightarrow}}\n\\renewcommand{\\Equiv}{\\mathrel{\\Leftrightarrow}}\n\\newcommand{\\entails}{\\vDash}\n\\newcommand{\\nentails}{\\nvDash}\n\n% Propositional\n\\newcommand{\\pmodels}{\\models_{\\mathrm{p}}}\n\\newcommand{\\npmodels}{\\nmodels_{\\mathrm{p}}}\n\\newcommand{\\pEquiv}{\\Equiv_{\\mathrm{p}}}\n\\newcommand{\\pentails}{\\entails_{\\mathrm{p}}}\n\\newcommand{\\npentails}{\\nentails_{\\mathrm{p}}}\n\n% First-order\n\\newcommand{\\Struct}{\\mathcal{M}}\n\\newcommand{\\InStruct}{^{\\mathcal{M}}}\n\n% tu05 macros\n\\newcommand{\\FFDD}{\\sym{have}(\\sym{umbrella},\\sym{day})}\n\\newcommand{\\FFDP}{\\sym{rainy}(\\sym{day})}\n\\newcommand{\\FFDC}{\\sym{wet}(\\sym{road},\\sym{day})}\n\\newcommand{\\FFDA}{\\sym{passed}(\\sym{cleaning\\_car},\\sym{road},\\sym{day})}\n\\newcommand{\\FFDV}{\\sym{weekend}(\\sym{day})}\n\\newcommand{\\FFDU}{\\sym{tuesday}(\\sym{day})}\n\\newcommand{\\FFDIP}{\\sym{by\\_foot}(\\sym{day})}\n\\newcommand{\\FFDIE}{\\sym{by\\_tram}(\\sym{day})}\n"
+  }
+}
