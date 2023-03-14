@@ -12,7 +12,8 @@ Stránky predmetov:
 
 Teoretické úlohy pre AIN riešte v aplikácii
 [Logic Workbook](https://fmfi-uk-1-ain-412.github.io/workbook/)
-([krátky návod](https://github.com/FMFI-UK-1-AIN-412/lpi-private/tree/main/teoreticke-ain#krátky-návod)).
+([krátky návod](https://github.com/FMFI-UK-1-AIN-412/lpi-private/tree/main/teoreticke-ain#krátky-návod)).    
+[Zbierka teoretických úloh](https://fmfi-uk-1-ain-412.github.io/lpi/teoreticke-ain/zbierka.pdf).
 
 | Týždeň | Prezentácie z prednášok | Praktické úlohy |
 |-------:|-------------------------|-----------------|
