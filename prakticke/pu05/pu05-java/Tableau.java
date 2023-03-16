@@ -123,7 +123,7 @@ class Node {
         for (Node child : children)
             if (!child.isClosed())
                 return false;
-        return true;
+        return children.size() > 0;
     }
 
     /**
