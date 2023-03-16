@@ -49,7 +49,7 @@ SignedFormula ff = new SignedFormula(false, f); // F (a∧b)
 ```
 
 Metóda `signedType(sign)` vráti akého typu (&alpha; alebo &beta;) by dotyčná
-formula bola, ak by bola označená značkou `sign` (negácia a premenná sú vždy
+formula bola, ak by bola označená značkou `sign` (negácia a atóm sú vždy
 typu &alpha;).
 
 Metóda `signedSubf` vráti „podformuly“ označenej formuly,
@@ -60,13 +60,13 @@ Pamätajte, že konjukcia a disjunkcia môžu mať viacero podformúl, takže
 tablové pravidlá v skutočnosti vyzerajú nasledovne:
 
 ```
-  T A1 ∧ A2 ∧ A3 ∧ ... ∧ An           F A1 ∧ A2 ∧ A3 ∧ ... ∧ An
- ───────────────────────────      ──────┬──────┬──────┬─────┬──────
-           T A1                    F A1 │ F A2 │ F A3 │ ... │ F An
-           T A2
-           T A3
-           ...
-           T An
+  T (A1 ∧ A2 ∧ A3 ∧ ... ∧ An)          F (A1 ∧ A2 ∧ A3 ∧ ... ∧ An)
+ ─────────────────────────────      ──────┬──────┬──────┬─────┬──────
+            T A1                     F A1 │ F A2 │ F A3 │ ... │ F An
+            T A2
+            T A3
+            ...
+            T An
 ```
 Ekvivalencia je konjunkcia dvoch implikácií ((<var>A</var> ↔︎ <var>B</var>) je
 skratkou za ((<var>A</var> → <var>B</var>) ∧ (<var>B</var> → <var>A</var>)),
@@ -74,10 +74,10 @@ takže pravidlá pre ňu vyzerajú podobne ako pre konjunkciu, len podformuly ma
 trošku zložitejší tvar:
 
 ```
- T A↔︎B             F A↔︎B
-───────       ───────┬───────
- T A→B         F A→B │ F B→A
- T B→A
+ T (A↔︎B)              F (A↔︎B)
+────────        ─────────┬─────────
+ T (A→B)         F (A→B) │ F (B→A)
+ T (B→A)
 ```
 
 ### Tablo
