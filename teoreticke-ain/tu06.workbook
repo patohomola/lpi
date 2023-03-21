@@ -1,0 +1,186 @@
+{
+  "versionNumber": 1,
+  "cells": {
+    "1": {
+      "id": 1,
+      "type": "text",
+      "data": "# 6. cvičenie z Logiky pre informatikov",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "2": {
+      "id": 2,
+      "type": "text",
+      "data": "## Cvičenie 6.:cnt[a]\nZbierka: :xref[5.2.1]{.exbook label=\"príklad\"}.\n\n:icon[tools] O nasledujúcich formulách v jazyku $\\Lang$,\nkde $\\Preds = \\{\\sym{p}, \\sym{q}, \\sym{r}, \\sym{s}\\}$\na $\\Consts = \\{\\sym{c}\\}$, rozhodnite pomocou _tablového kalkulu_,\nči sú splniteľné, nesplniteľné, tautológie, alebo falzifikovateľné.\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "3": {
+      "id": 3,
+      "type": "text",
+      "data": "## Cvičenie 6.:cnt[a]\nZbierka: :xref[5.2.11]{.exbook label=\"príklad\"}, :xref[5.2.15]{.exbook label=\"úloha\"}.\n\nMonika bude mať cez víkend návštevu, prídu k nej svokrovci. Potrebuje sa teda rozhodnúť, aké pohostenie pre nich pripraví. Môže nachystať oriešky, sendviče, koláč, ovocnú misu, syrový tanier alebo šunkový tanier. Má takéto obmedzenia:\n\n1. Ak by chystala sendviče alebo koláč, tak určite nestihne nachystať aj ovocnú misu.\n2. Svokra je vegetariánka, takže Monika určite nachystá oriešky, syrový tanier, koláč alebo ovocnú misu (inak by svokra nemala čo jesť).\n3. Svokrovci prídu na návštevu hladní, takže ak nenachystá sendviče, určite musí aspoň upiecť koláč.\n4. Monika má novú rúru, ktorú ešte nestihla vyskúšať, takže si netrúfne hneď na prvý pokus piecť koláč pre návštevu.\n\nZistite:\n\n:::enum{.i}\n\n1. Môže Monika pripraviť pohostenie vyhovujúce všetkým obmedzeniam?\n2. Aké sú jej možnosti?\n\n:::\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "4": {
+      "id": 4,
+      "type": "text",
+      "data": "**d)** :icon[write]\nAké sú výsledky riešenia logických problémov z časti b)?\nZ ktorých tabiel a ich vetiev a z ktorých ich vlastností\nvyvodzujete tieto výsledky?\n\n…\n\n**e)** :icon[write]\nAké sú odpovede na otázky i. a ii. zo slovnej úlohy?\n(Interpretujte riešenia logických problémov.)\n\n…\n  \n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "8": {
+      "id": 8,
+      "type": "text",
+      "data": ":icon[deadline]\nVypracované cvičenie odovzdajte najneskôr v **nedeľu 26. 3. 2023 o 23:59**.\n\n:icon[bonus]\nZa včas odovzdané úplne vypracované cvičenie získate **0,5 boda**\na **spätnú väzbu** na prípadné chyby.\n\n:icon[technical]\nCvičenie riešte vo **vetve `tu06`** vo **svojom repozitári**\n`‹váš_GitHub_login›/lpi23-‹váš_uniba_login›`.\n\n:p[[**Otvoriť toto cvičenie v správnej vetve**](../../tu06/teoreticke-ain/tu06.workbook)]{.mx-5}\n\nRiešenie občas uložte stlačením stlačením\n:span[Merge changes]{.border.border-success.text-success.p-1.rounded} na hornej lište.\n\n:icon[submission]\n**Cvičenie odovzdáte** vytvorením pull requestu (PR)\ndo vetvy `tu06` v repozitári `FMFI-UK-1-AIN-412/lpi23-‹váš_uniba_login›`.\n**Skontrolujte**, či sa váš PR objaví v [**zozname PR pre tu06**](https://github.com/pulls?utf8=✓&q=is%3Aopen+is%3Apr+user%3AFMFI-UK-1-AIN-412+base%3Atu06).\n\n:icon[envelope-at-fill]{.text-primary}\n**Otázky** pre vyučujúcich mimo kontaktnej výučby posielajte na:   \n`lpi-team` :icon[at] `lists.dai.fmph.uniba.sk`.\n\n<details>\n\n::summary[:icon[help] **Tabuľka symbolov** používaných nižšie a ich $\\TeX$ového zápisu.]\n\n:::div{.table.table-sm.overflow-auto.small}\n| Symbol | TeX | Význam | Symbol | TeX | Význam | Symbol | TeX | Význam |\n|:------:|:----|:-------|:------:|:----|:-------|:------:|:----|:-------|\n| ∧ | `\\land` | konjunkcia | $\\Lang$ | `\\Lang` | jazyk | $\\models$ | `\\models` | pravdivosť v štruktúre |\n| ∨ | `\\lor` | disjunkcia | $\\Atoms$ | `\\Atoms` | množina atómov jazyka $\\Lang$ | $\\nmodels$ | `\\nmodels` | nepravdivosť v štruktúre |\n| → | `\\limpl` | implikácia | $\\Consts$ | `\\Consts` | množina konštánt jazyka $\\Lang$ | $\\pmodels$ | `\\pmodels` | pravdivosť v ohodnotení (<em>p</em>ropozičná) |\n| ↔ | `\\lequiv` | ekvivalencia | $\\Preds$ | `\\Preds` | množina predikátov jazyka $\\Lang$ | $\\npmodels$ | `\\npmodels` | nepravdivosť v ohodnotení |\n| ≐ | `\\doteq` | rovnosť (ako logický) symbol | $\\Forms$ | `\\Forms` | množina všetkých formúl jazyka $\\Lang$ | $\\pentails$ | `\\pentails` | výrokovologické (<em>p</em>ropozičné) vyplývanie |\n| ¬ | `\\lnot` | negácia | $\\Struct$ | `\\Struct` | štruktúra | $\\npentails$ | `\\npentails` | výrokovologické nevyplývanie |\n| ↦ | `\\mapsto` | zobrazenie (prvku na prvok) | $\\sym{Ann}$, $\\asym{2}{likes}$ | `\\sym{Ann}`, `\\asym{2}{likes}` | konkrétny mimolog. symbol | $\\bigl($, $\\bigr)$| `\\bigl(`, `\\bigr)` | väčšie zátvorky |\n\n:::\n</details>",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "9": {
+      "id": 9,
+      "type": "text",
+      "data": "$B = \\bigl((\\sym{s}(\\sym{c}) \\lor \\sym{r}(\\sym{c})) \\limpl\n    \\bigl(\\neg \\sym{p}(\\sym{c}) \\land\n      (\\neg \\sym{s}(\\sym{c}) \\limpl \\sym{r}(\\sym{c}))\\bigr)\\bigr)$\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "10": {
+      "id": 10,
+      "type": "text",
+      "data": "$A = \\bigl((\\sym{p}(\\sym{c}) \\limpl \\sym{r}(\\sym{c})) \\land \\neg (\\sym{r}(\\sym{c}) \\lor \\neg \\sym{p}(\\sym{c}))\\bigr)$\n",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "11": {
+      "id": 11,
+      "type": "text",
+      "data": "Ako vaše tablo (prípadne tablá) riešia uvedený logický problém pre formulu $A$?\n\nAk je formula zároveň splniteľná aj falzifikovateľná,\nzapíšte jej model aj ohodnotenie, v ktorom nie je pravdivá.\n\n:icon[write] **Odpoveď:**\n…",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "13": {
+      "id": 13,
+      "type": "text",
+      "data": "Ako vaše tablo (prípadne tablá) riešia uvedený logický problém pre formulu $B$?\n\nAk je formula zároveň splniteľná aj falzifikovateľná,\nzapíšte jej model aj ohodnotenie, v ktorom nie je pravdivá.\n\n:icon[write] **Odpoveď:**\n…",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "18": {
+      "id": 18,
+      "type": "text",
+      "data": ":icon[tools] **a)** Pomocou aplikácie Formalization checker sformalizujte výroky 1.–4. ako ucelenú teóriu $T = \\{A_1, \\ldots, A_4\\}$.\n\n<div class=\"note bg-transparent p-0\">\n\n:icon[explanation] \nCieľom úlohy je zistiť, či a aké pohostenie môže Monika pripraviť, aby boli jej svokrovci spokojní.\nZvolíme si prvorádový jazyk $\\Lang$,\nktorý nám umožní sformalizovať ich podmienky bez nepodstatných detailov.\nPostačia nám na to mimologické symboly\n$\\Preds = \\{\n  \\sym{nuts}^1, \\sym{sandwiches}^1,\n  \\sym{cake}^1, \\sym{fruits}^1,\n  \\sym{cheese}^1, \\sym{ham}^1\n\\}$ a $\\Consts = \\{\\sym{snacks}\\}$,\npričom konštanta $\\sym{snacks}$ označuje Monikino pohostenie\na zamýšľaný význam predikátových symbolov je:\n\n:::div{.table.table-intended-meaning}\n| Predikát | Význam |\n|----------|--------|\n| $\\sym{nuts}(x)$ | pohostenie $x$ obsahuje oriešky |\n| $\\sym{sandwiches}(x)$ | pohostenie $x$ obsahuje sendviče |\n| $\\sym{cake}(x)$ | pohostenie $x$ obsahuje koláč|\n| $\\sym{fruits}(x)$ | pohostenie $x$ obsahuje ovocnú misu |\n| $\\sym{cheese}(x)$ | pohostenie $x$ obsahuje syrový tanier |\n| $\\sym{ham}(x)$ | pohostenie $x$ obsahuje šunkový tanier |\n:::\n\n</div>",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "19": {
+      "id": 19,
+      "type": "formalizationChecker",
+      "data": {
+        "exercise": {
+          "exercise_id": 21,
+          "title": "2023 – Cvičenie 6.2",
+          "description": "Sformalizujte nasledujúce výroky ako formuly v uvedenom jazyku výrokovologickej časti logiky prvého rádu. ",
+          "constants": "snacks",
+          "predicates": "nuts/1, sandwiches/1, cake/1, fruits/1, cheese/1, ham/1",
+          "functions": "",
+          "constraints": "",
+          "propositions": [
+            {
+              "proposition_id": 650,
+              "proposition": "Ak by chystala sendviče alebo koláč, tak určite nestihne nachystať aj ovocnú misu.",
+              "solution": null
+            },
+            {
+              "proposition_id": 651,
+              "proposition": "Svokra je vegetariánka, takže Monika určite nachystá oriešky, syrový tanier, koláč alebo ovocnú misu (inak by svokra nemala čo jesť).",
+              "solution": null
+            },
+            {
+              "proposition_id": 652,
+              "proposition": "Svokrovci prídu na návštevu hladní, takže ak nenachystá sendviče, určite musí aspoň upiecť koláč.",
+              "solution": null
+            },
+            {
+              "proposition_id": 653,
+              "proposition": "Monika má novú rúru, ktorú ešte nestihla vyskúšať, takže si netrúfne hneď na prvý pokus piecť koláč pre návštevu.",
+              "solution": null
+            }
+          ]
+        },
+        "exerciseId": 21
+      },
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "20": {
+      "id": 20,
+      "type": "text",
+      "data": "**c)** :icon[write]\nAké tablo alebo tablá musíte zostrojiť,\naby ste vyriešili logické problémy, ktoré ste určili v časti b)?\n\n…\n\n:icon[tools]\nPomocou aplikácie Tableau editor zostrojte toto tablo (tieto tablá).\n\n:::div{.note.bg-white.p-0}\n\n:icon[warning]\nÚloha sa dá vyriešiť pomocou tabla/tabiel s najviac 20-timi uzlami.    \n**Tablá nad 30 uzlov neakceptujeme.**\n:::",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    },
+    "21": {
+      "id": 21,
+      "type": "text",
+      "data": "**b)** :icon[write]\nAké logické problémy musíte vyriešiť, aby ste zodpovedali otázky i. a ii. zo zadania?\n\n…",
+      "idCounter": 0,
+      "comments": {
+        "ids": [],
+        "entities": {}
+      }
+    }
+  },
+  "cellsOrder": [
+    1,
+    8,
+    2,
+    10,
+    11,
+    9,
+    13,
+    3,
+    18,
+    19,
+    21,
+    20,
+    4
+  ],
+  "settings": {
+    "katexMacros": "\\newcommand{\\DeclareMathOperator}[2]{\\newcommand{#1}{\\mathop{\\mathrm{#2}}}}\n\n%% General math\n\n% Domain and range\n\\DeclareMathOperator{\\dom}{dom}\n\\DeclareMathOperator{\\rng}{rng}\n\n% Powerset\n\\newcommand\\powerset[1]{\\mathcal{P}(#1)}\n\n% Cardinality\n\\newcommand{\\card}[1]{\\lvert#1\\rvert}\n\n% Numbers\n\\newcommand{\\Nat}{\\mathbb{N}}\n\n% Operations\n\\newcommand{\\TIMES}{\\cdot}\n\n\n% Meta syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n\\DeclareMathOperator{\\arity}{ar}\n\\newcommand{\\Lang}{\\mathcal{L}}\n\\newcommand{\\Vars}{\\mathcal{V}_{\\Lang}}\n\\newcommand{\\Consts}{\\mathcal{C}_{\\Lang}}\n\\newcommand{\\Preds}{\\mathcal{P}_{\\Lang}}\n\\newcommand{\\Funcs}{\\mathcal{F}_{\\Lang}}\n\\newcommand{\\Terms}{\\mathcal{T}_{\\Lang}}\n\\newcommand{\\Atoms}{\\mathcal{A}_{\\Lang}}\n\\newcommand{\\Forms}{\\mathcal{E}_{\\Lang}}\n\\newcommand{\\PAtoms}{\\mathcal{PA}_{\\Lang}}\n\\newcommand{\\PForms}{\\mathcal{PE}_{\\Lang}}\n\n% Equality axioms\n\\newcommand{\\Eq}{\\mathrm{Eq}}\n\n% Syntactic transformation\n\\newcommand{\\transform}{\\rightsquigarrow}\n\n% Various syntactic functions\n\\DeclareMathOperator{\\vars}{vars}\n\\DeclareMathOperator{\\atoms}{atoms}\n\\DeclareMathOperator{\\acnt}{acnt}\n\\DeclareMathOperator{\\termVars}{termVars}\n\\DeclareMathOperator{\\free}{free}\n\\DeclareMathOperator{\\ground}{ground}\n\\DeclareMathOperator{\\mgu}{mgu}\n\\DeclareMathOperator{\\vcount}{vcount}\n\\DeclareMathOperator{\\acount}{acount}\n\\DeclareMathOperator{\\ccount}{ccount}\n\\DeclareMathOperator{\\pcount}{pcount}\n\\DeclareMathOperator{\\ncount}{ncount}\n\\DeclareMathOperator{\\cjcount}{cjcount}\n\\DeclareMathOperator{\\bccount}{bccount}\n\\DeclareMathOperator{\\lpcount}{lpcount}\n\\DeclareMathOperator{\\rpcount}{rpcount}\n\\DeclareMathOperator{\\subfs}{subfs}\n\\DeclareMathOperator{\\cons}{cons}\n\\DeclareMathOperator{\\nnf}{nnf}\n\n\n% Concrete syntax %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n% Connectives\n\n\\newcommand{\\nrarr}{\\nrightarrow}\n\\newcommand{\\limpl}{\\rarr}\n\\newcommand{\\nlimpl}{\\nrarr}\n\\newcommand{\\lequiv}{\\lrarr}\n\\newcommand{\\bigland}{\\bigwedge}\n\\newcommand{\\biglor}{\\bigvee}\n\\newcommand{\\lnand}{\\mathbin{\\uparrow}}\n\\newcommand{\\lnor}{\\mathbin{\\downarrow}}\n\\newcommand{\\lxor}{\\veebar}\n\\newcommand{\\landnot}{\\nrightarrow}\n\\newcommand{\\emptyclause}{\\Box}\n\\newcommand{\\quant}[2]{\\mathop{#1#2}\\nolimits}\n\\newcommand{\\A}{\\quant\\forall}\n\\newcommand{\\E}{\\quant\\exists}\n\n% Symbols\n\\newcommand{\\sym}[1]{\\text{\\textsf{#1}}}\n\\newcommand{\\asym}[2]{\\text{\\textsf{#2}$^#1$}}\n\\newcommand{\\var}[1]{\\text{\\textsf{\\textit{#1}}}}\n\\newcommand\\vk{\\var{k}}\n\\newcommand\\vl{\\var{l}}\n\\newcommand\\vm{\\var{m}}\n\\newcommand\\vn{\\var{n}}\n\\newcommand\\vo{\\var{o}}\n\\newcommand\\vp{\\var{p}}\n\\newcommand\\vq{\\var{q}}\n\\newcommand\\vr{\\var{r}}\n\\newcommand\\vs{\\var{s}}\n\\newcommand\\vt{\\var{t}}\n\\newcommand\\vu{\\var{u}}\n\\newcommand\\vv{\\var{v}}\n\\newcommand\\vw{\\var{w}}\n\\newcommand\\vx{\\var{x}}\n\\newcommand\\vy{\\var{y}}\n\\newcommand\\vz{\\var{z}}\n\n% Tableaux\n\\newcommand\\sign[1]{\\mathop{\\text{\\textsf{\\textbf{#1}}}}\\nolimits}\n\n\n% Semantics %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\n% General\n\\providecommand{\\nmodels}\n    {\\mathrel{\\mkern1.5mu{\\not}\\mkern-1.5mu}\\models}\n\\providecommand{\\Equiv}{\\mathrel{\\Leftrightarrow}}\n\\renewcommand{\\Equiv}{\\mathrel{\\Leftrightarrow}}\n\\newcommand{\\entails}{\\vDash}\n\\newcommand{\\nentails}{\\nvDash}\n\n% Propositional\n\\newcommand{\\pmodels}{\\models_{\\mathrm{p}}}\n\\newcommand{\\npmodels}{\\nmodels_{\\mathrm{p}}}\n\\newcommand{\\pEquiv}{\\Equiv_{\\mathrm{p}}}\n\\newcommand{\\pentails}{\\entails_{\\mathrm{p}}}\n\\newcommand{\\npentails}{\\nentails_{\\mathrm{p}}}\n\n% First-order\n\\newcommand{\\Struct}{\\mathcal{M}}\n\\newcommand{\\InStruct}{^{\\mathcal{M}}}\n"
+  }
+}
