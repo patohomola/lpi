@@ -34,6 +34,6 @@ Teoretické úlohy pre AIN riešte v aplikácii
 | 3 | [Výrokovologické vyplývanie](https://fmfi-uk-1-ain-412.github.io/lpi/prednasky/pr03.pdf) | [Formula](prakticke/pu03) |
 | 4 | [Vlastnosti a vzťahy výrokovologických formúl](https://fmfi-uk-1-ain-412.github.io/lpi/prednasky/pr04.pdf) | [NNF a CNF](prakticke/pu04) |
 | 5 | [Dôkazy a výrokovologické tablá](https://fmfi-uk-1-ain-412.github.io/lpi/prednasky/pr05.pdf) | [Tableau](prakticke/pu05) |
-| 6 | [Korektnosť a úplnosť výrokovologických tabiel](https://fmfi-uk-1-ain-412.github.io/lpi/prednasky/pr06.pdf) | |
+| 6 | [Korektnosť a úplnosť výrokovologických tabiel](https://fmfi-uk-1-ain-412.github.io/lpi/prednasky/pr06.pdf) | [TableauBuilder](prakticke/pu06) |
 
 [Pravidlá pre úlohy](http://dai.fmph.uniba.sk/w/Course:Logic_for_CS/sk#pravidla-uloh)
