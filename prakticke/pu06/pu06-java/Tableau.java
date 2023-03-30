@@ -298,33 +298,55 @@ class Tableau {
 
     /**
      * Add signed formulas as the "input" of a tableau.
-     *
+     * <p>
      * Note: this can be called only once on an empty tableau.
      *
-     * @param sfs  signed formulas to add at the start of the tableau
-     *             as input
+     * @param sfs signed formulas to add at the start of the tableau
+     *            as input
      * @return A list of nodes that were created.
      */
-    public List<Node>  addInitial(SignedFormula[] sfs) {
-        throw new RuntimeException("Not implemented");
+    public List<Node> addInitial(SignedFormula[] sfs) { //atomic formula noT HAVE sfs
+
+        List<Node> initial = new ArrayList<>();
+        if (sfs == null || sfs.length < 1)
+            return initial;
+        root = new Node(sfs[0], null);
+        root.addToTableau(this, 1);
+        initial.add(root);
+        int nodeNumber = 2;
+        Node prevnode = root;
+        for (int i = 1; i < sfs.length; i++) {
+            Node node = new Node(sfs[i], null);
+            prevnode.addChild(node);
+            prevnode = node;
+            node.addToTableau(this, nodeNumber);
+            initial.add(node);
+            nodeNumber++;
+        }
+        number = nodeNumber;
+        return initial;
     }
 
     /**
      * Extend the tableau at `leaf` using the `index`-th
      * alpha-subformula of `from` node.
      *
-     * @param leaf the (leaf) node to add the new node/formula to
-     * @param from the node with an alpha formula which's subformula
-     *             will be added
+     * @param leaf  the (leaf) node to add the new node/formula to
+     * @param from  the node with an alpha formula which's subformula
+     *              will be added
      * @param index which alfa-subformula to append
-     *
      * @return reference to the added node.
-     *
+     * <p>
      * TODO `SignedFormula sf` instead of index?
      */
-    public Node extendAlpha(Node leaf, Node from, int index)
-    {
-        throw new RuntimeException("Not implemented");
+    public Node extendAlpha(Node leaf, Node from, int index) {
+        boolean s = from.sf().sign();
+        List<SignedFormula> sfs = from.sf().subf();
+        Node newleaf = new Node(sfs.get(index), from);
+        newleaf.addToTableau(this, number);
+        number++;
+        leaf.addChild(newleaf);
+        return newleaf;
     }
 
     /**
@@ -336,22 +358,33 @@ class Tableau {
      *             will be added
      * @return list of references to the added nodes
      */
-    public List<Node> extendBeta(Node leaf, Node from)
-    {
-        throw new RuntimeException("Not implemented");
+    public List<Node> extendBeta(Node leaf, Node from) {
+        List<SignedFormula> sfs = from.sf().subf();
+        List<Node> betas = new ArrayList<>();
+        for (SignedFormula sf : sfs) {
+            Node newleaf = new Node(sf, from);
+            newleaf.addToTableau(this, number);
+            number++;
+
+            leaf.addChild(newleaf);
+            betas.add(newleaf);
+        }
+        return betas;
     }
 
     /**
-     * Internal helper to add a Node to the tablea.
-     *
+     * Internal helper to add a Node to the tableau.
+     * <p>
      * Calls `addChild` on parent (if appropriate)
      * and `addToTableau` with appropriate number.
      *
      * @param parent parent to put the new node under, null to insert a root
-     * @param node the node to insert
+     * @param node   the node to insert
      */
     private void addNode(Node parent, Node node) {
-        throw new RuntimeException("Not implemented");
-    }
 
+        parent.addChild(node);//?
+        node.addToTableau(this, number++);//?
+        //throw new RuntimeException("Not implemented");
+    }
 }
